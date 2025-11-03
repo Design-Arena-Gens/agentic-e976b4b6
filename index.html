@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jarvis Voice Agent</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Jarvis Voice Agent</h1>
+      <p class="subtitle">Say ?Hey Jarvis ?? and give a command.</p>
+    </header>
+
+    <main>
+      <section class="controls">
+        <button id="micBtn" class="mic">Start Listening</button>
+        <div class="hints">
+          <p>Examples:</p>
+          <ul>
+            <li>Hey Jarvis, call daddy</li>
+            <li>Jarvis, open Google Maps and start directions to Sadar Bazaar Chatgali</li>
+            <li>Jarvis, make a hair salon appointment on 4th November at 2 pm</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="transcript">
+        <h2>Transcript</h2>
+        <div id="transcript"></div>
+      </section>
+
+      <section class="responses">
+        <h2>Agent</h2>
+        <div id="responses"></div>
+      </section>
+    </main>
+
+    <footer>
+      <small>Demo mode by default. Add API keys to enable advanced actions.</small>
+    </footer>
+  </div>
+
+  <a id="hiddenTel" href="#" style="display:none">call</a>
+
+  <script src="/script.js"></script>
+</body>
+</html>
